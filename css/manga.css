@@ -1,0 +1,454 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2C74B3;
+}
+
+/* ------------------------ NAVBAR STYLES ------------------------ */
+nav {
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background: rgba(0, 0, 0, 0.395);
+}
+
+.nav-logo{
+    display: flex;
+}
+
+.nav-logo h1{
+    color: antiquewhite;
+}
+
+.nav-logo img{
+    width: 100%;
+    height: 52px;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+.nav-logo h1{
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.nav-title{
+    font-size: 1.5em;
+    color: white;
+    margin-left: 20px;
+}
+
+.nav-links {
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-links .link a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 0 20px 0 20px;
+    margin-left: 50px;
+}
+
+.nav-links .link a:hover{
+    text-decoration: underline;
+}
+
+.form {
+    margin-right: 70px;
+    background-color: #F6E6CB;
+    color: black;
+    border-radius: 20px;
+}
+
+input[type="search"]{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+input {
+    padding-left: 25px; /* ngatur jarak horizontal dari kiri */
+    padding-bottom: 10px; /* ngatur jarak vertikal dari atas */
+}
+
+.form img{
+    margin-top: 6px;
+    margin-left: 15px;
+    width: 20px;
+}
+
+/* ------------------------ MAIN STYLES ------------------------ */
+main{
+    background-color: #2C74B3;
+    margin-top: 72px;
+}
+
+main h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #19376D;
+    color: #fff;
+    margin-bottom: 15px;
+    font-family: "Titan One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.manga-list, .manga-container, .manga-horror {
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    overflow-y: auto; /* ngatur overflow agar bisa digulung ke bawah */
+    max-height: 400px; /* atur ketinggian maksimum konten supaya bisa digulung */
+    display: flex; /* flexbox untuk atur item secara horizon */
+    flex-wrap: wrap; /* supaya item untuk wrap ke baris baru */
+    gap: 10px; /* jarak antar item */
+    padding: 10px; /* padding untuk ada ruang di sekitar konten */
+}
+
+.manga-item, .manga-card, .horror-manga {
+    width: 200px;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    background-color: #8EACCD;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 200px; /* lebar minimum item */
+    max-width: 200px; /* lebar maksimum item */
+    flex: 0 0 auto; /* item tidak fleksibel, tetap dengan lebar yang ditentukan */
+    transition: transform 0.2s ease; /* efek transisi */
+}   
+
+.manga-item img, .manga-card img, .horror-manga img {
+    width: 100%;
+    height: 66%;
+}
+
+.manga-item:hover, .manga-card:hover, .horror-manga:hover {
+    transform: translateY(-5px); /* efek naik saat hover */
+}
+
+.manga-details {
+    max-width: 180px; /* lebar detail manga */
+    text-align: center; /* teks dalam detail manga ke tengah */
+    margin: 13px 10px 0;
+    justify-content: center;
+}
+
+.manga-title {
+    font-size: 20px;
+    color: #0073e6;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.manga-title:hover {
+    text-decoration: underline;
+}
+
+.manga-rank {
+    font-style: italic;
+    color: #404258;
+    margin-top: 10px;
+}
+
+.title-manga {
+    font-size: 20px;
+    color: #0073e6;
+    text-decoration: none;    
+    margin-bottom: 5px;
+}
+
+.title-manga:hover, .title-horror:hover {
+    text-decoration: underline;
+}
+
+.rank-manga, .rank-horror{
+    font-style: italic;
+    color: #404258;
+    margin-top: 60px;
+}
+
+.title-horror{
+    font-size: 20px;
+    margin: 15px 0;
+    color: #0073e6;
+    text-decoration: none;
+    display: block; 
+    white-space: normal; 
+    word-wrap: break-word; 
+}
+
+/* ------------------------ FOOTER STYLES ------------------------ */
+footer {
+    background-color: #19376D;
+    color: #fff;
+    border-top: #77A1D3 3px solid;
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin: 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section #follow{
+    margin-top: 20px;
+}
+.socials {
+    display: flex;
+    gap: 10px;
+    margin-left: 129px;
+}
+
+.socials a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.icon-fb{
+    margin-top: 5px;
+    width: 37px;
+}
+
+.icon-wa{
+    margin-top: 7px;
+    width: 33px;
+}
+
+.icon-ig{
+    margin-left: 3px;
+    margin-top: 10px;
+    width: 28px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #8EACCD;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+/* ------------------------ RESPONSIVE TO <= 3000px ------------------------ */
+@media screen and (max-width: 3000px) {
+    header .nav-logo h1{
+        margin-top: 26px;
+        margin-left: 30px;
+    }
+}
+
+/* ------------------------ RESPONSIVE TO <= 890px ------------------------ */
+@media screen and (max-width: 890px){
+    header .nav-links {
+        gap: 0;
+    }
+    header .nav-logo img{
+        margin-left: 20px;
+    }
+    header .nav-logo h1{
+        margin-left: 9px;
+        margin-right: 5px;
+    }
+    header .nav-links .link a{
+        padding: 15px;
+    }
+    .form{
+        margin-left: 40px;
+    }
+    .socials{
+        margin-left: 20px;
+    }
+}
+
+/* ------------------------ RESPONSIVE TO <= 835px ------------------------ */
+@media screen and (max-width: 835px) {
+    header .nav-links {
+        gap: 0;
+    }
+    header .nav-logo img{
+        margin-left: 15px;
+    }
+    header .nav-logo h1{
+        margin-left: 9px;
+        margin-right: 5px;
+    }
+    header .nav-links .link a{
+        padding: 10px;
+    }
+    .form{
+        margin-left: 30px;
+    }    
+}
+
+/* ------------------------ RESPONSIVE TO <= 800px ------------------------ */
+@media screen and (max-width: 800px) {
+    nav .nav-links {
+        gap: 50px; /* Space di antara links/li */
+    }
+}
+
+/* ------------------------ RESPONSIVE TO <= 450px ------------------------ */
+@media screen and (max-width: 450px) {
+    .nav-logo img{
+        margin-right: 10px;
+    }
+    .nav-logo h1{
+        margin-top: 15px;
+    }
+    .form{
+        margin-left: 20px;
+    }
+    .manga-item, .manga-card, .horror-manga{
+        min-width: 140px;
+        max-width: 150px;
+        margin: 0 20px;
+    }
+}
+
+/* ------------------------ RESPONSIVE TO <= 430px ------------------------ */
+@media screen and (max-width: 430px) {
+    header .nav-logo img{
+        border-radius: 50%;
+        width: 55%;
+        height: 30px;
+        margin-left: 5px;
+    }    
+    header .nav-logo h1{
+        font-size: 1.1em;
+        margin-top: 5px;
+        margin-left: 4px;
+    }
+    .form{
+        width: 100px;
+        height: 30px;
+    }
+    .menu-icon{
+        margin-top: 10px;
+            border-radius: 4px;
+    }
+    .menu-icon img{
+        width: 25px;
+    }
+}
+
+/* ------------------------ RESPONSIVE TO <= 400px ------------------------ */
+@media screen and (max-width: 400px) {
+    main .manga-item, .manga-card, .horror-manga{
+        min-width: 120px;
+        max-width: 100px;
+        margin: 0 20px;
+    }    
+}
+
+/* ------------------------ RESPONSIVE TO <= 380px ------------------------ */
+@media screen and (max-width: 380px) {
+    header .nav-logo img{
+        border-radius: 50%;
+        width: 50%;
+        height: 30px;
+        margin-left: 5px;
+    }    
+    header .nav-logo h1{
+        font-size: 0.8em;
+        margin-top: 15px;
+        margin-left: 4px;
+    }
+    .form{
+        width: 30px;
+        height: 30px;
+    }
+    .menu-icon{
+        margin-top: 15px;
+        border-radius: 4px;
+    }
+    .menu-icon img{
+        width: 20px;
+    }
+}
+
+/* ------------------------ RESPONSIVE TO <= 320px ------------------------ */
+@media screen and (max-width: 320px) {
+    header nav .nav-logo img{
+        border-radius: 50%;
+        width: 45%;
+        height: 30px;
+        margin-left: 5px;
+    }
+    header nav .nav-logo h1{
+        font-size: 0.8em;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+    header nav .form{
+        width: 120px;
+        height: 30px;
+        margin-left: 40px;
+    }
+    .menu-icon{
+        margin-top: 15px;
+        border-radius: 4px;
+    }
+     main .manga-item, .manga-card, .horror-manga{
+        min-width: 90px;
+        max-width: 100px;
+        margin: 0 20px;
+    }
+}

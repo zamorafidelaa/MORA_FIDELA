@@ -1,0 +1,85 @@
+/* ------------------------ NAV STYLES ------------------------ */
+nav {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.nav-logo{
+    display: flex;
+    color: antiquewhite;
+}
+
+.nav-logo img{
+    width: 100%;
+    height: 52px;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+.nav-logo h1{
+    margin-top: 24px;
+    margin-left: 20px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.nav-title{
+    font-size: 1.5em;
+    color: white;
+    margin-left: 20px;
+}
+
+.nav-links {
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-links .link a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 0 20px 0 20px;
+    margin-left: 50px;
+}
+
+.nav-links .link a:hover{
+    text-decoration: underline;
+}
+
+.form {
+    margin-right: 70px;
+    background-color: #F6E6CB;
+    color: black;
+    border-radius: 20px;
+}
+
+input[type="search"]{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+input {
+    padding-left: 25px; /* ngatur jarak horizontal dari kiri */
+    padding-bottom: 10px; /* ngatur jarak vertikal dari atas */
+ }
+
+.form img{
+    margin-top: 6px;
+    margin-left: 15px;
+    width: 20px;
+}

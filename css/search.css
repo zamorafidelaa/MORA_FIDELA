@@ -1,0 +1,28 @@
+/*  ------------------------ MAIN STYLES  ------------------------ */
+main {
+  padding: 91px 0 20px;
+}
+
+.anime a {
+    font-size: 16px;
+    font-weight: 800;
+    margin: 10px 0;
+    padding: 0 10px;
+    height: 32px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #00224D;
+    transition: text-decoration 0.3s ease; /* transisi halus underline */
+  }
+  
+  /* buat link teks & garis bawah saat dihover */
+  a:hover,
+  a:focus {
+    text-decoration: underline;
+  }
+
+  .anime p{
+    font-size: 16px;
+    margin: 20px 0;
+    color: #404258;
+  }

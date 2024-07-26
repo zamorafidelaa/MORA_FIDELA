@@ -1,0 +1,61 @@
+body{
+    background-color: #2C74B3;
+}
+/* ------------------------ HEADER STYLES ------------------------ */
+header h1 {
+    left: 0;
+    font-size: 24px;
+}
+
+/* ------------------------ MAIN STYLES ------------------------*/
+main {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+main h1 {
+    margin-top: 115px;
+    border-radius: 50px;
+}
+
+/* ------------------------ LIST STYLES ------------------------ */
+.what-we-offer ul, .contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.what-we-offer ul li, .contact-info ul li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: #77A1D3 5px solid;
+}
+
+/* ------------------------ LINK STYLES ------------------------ */
+ul li a {
+    color: #77A1D3;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/*------------------------ SECTION STYLES ------------------------ */
+section {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #77A1D3;
+    margin-bottom: 10px;
+}
+
+section p, section ul {
+    margin-bottom: 20px;
+}

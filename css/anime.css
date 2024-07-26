@@ -1,0 +1,895 @@
+/* Existing CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2C74B3;
+}
+
+/* ------------------------ HEADER STYLES ------------------------ */
+.banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#bgVideo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+/* ------------------------ NAV STYLES ------------------------ */
+nav {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.nav-logo{
+    display: flex;
+    color: antiquewhite;
+}
+
+.nav-logo img{
+    width: 100%;
+    height: 52px;
+    border-radius: 50%;
+    margin-left: 30px;
+}
+
+.nav-logo h1{
+    margin-top: 24px;
+    margin-left: 20px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.nav-title{
+    font-size: 1.5em;
+    color: white;
+    margin-left: 20px;
+}
+
+.menu-icon img{
+    width: 35px;
+}
+
+.menu-icon {
+    display: none; /* menyembunyikan menu-icon secara default */
+    background-color: #F6E6CB;
+    border-radius: 6px;
+    align-items: center;
+    cursor: pointer; /* menambahkan pointer cursor saat hover untuk klik */
+}
+
+.nav-links {
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-links .link a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 0 20px 0 20px;
+    margin-left: 50px;
+}
+
+.nav-links .link a:hover{
+    text-decoration: underline;
+}
+
+.form {
+    margin-right: 70px;
+    background-color: #F6E6CB;
+    color: black;
+    border-radius: 20px;
+}
+
+input[type="search"]{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+input {
+    padding-left: 25px; /* ngatur jarak horizontal dari kiri */
+    padding-bottom: 10px; /* ngatur jarak vertikal dari atas */
+ }
+
+.form img{
+    margin-top: 6px;
+    margin-left: 15px;
+    width: 20px;
+}
+
+.section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    color: white;
+    padding: 50px;
+    z-index: 1;
+}
+
+.header-image {
+    margin-top: 25px;
+    display: flex;
+    gap: 20px;
+}
+
+.header-image img {
+    border: solid 8px;
+    width: 300px;
+    height: auto;
+    margin-left: 50px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-two{
+    position: absolute;
+    margin-left: 230px;
+    margin-top: 87px;
+}
+
+.header-content h1 {
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 3em;
+    margin-bottom: 20px;
+    margin-left: 300px;
+}
+
+.header-content p {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    margin-left: 300px;
+}
+
+/*------------------------ MAIN STYLES ------------------------*/
+main{
+    background-color: #2C74B3;
+}
+
+main h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #19376D;  
+    color: #fff;
+    margin-bottom: 15px;
+    font-family: "Titan One", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    margin-bottom: 10px;
+}
+
+h1:nth-of-type(1) {
+    position: relative;
+    top: -16px;
+}
+
+/* ------------------------ POPULAR AND ACTION ANIME STYLES ------------------------ */
+#anime-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.anime {
+    background-color: #8EACCD;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 200px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.anime:hover {
+    transform: translateY(-10px);
+}
+
+.anime img {
+    width: 100%;
+    height: 70%;
+    margin-bottom: 5px;
+}
+
+.anime a {
+    color: #00224D;
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 0 10px;
+    height: 50px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.anime-action {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.anime-item {
+    background-color: #8EACCD;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.anime-item:hover {
+    transform: translateY(-10px);
+}
+
+.anime-item img {
+    width: 100%;
+    height: 70%;
+    margin-bottom: 5px;
+}
+
+.anime-title {
+    color: #00224D;
+    font-size: 16px;
+    font-weight: 800;
+    margin: 10px 0;
+    padding: 0 10px;
+    height: 32px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.anime-title:hover{
+    text-decoration: underline;
+}
+
+.anime-score {
+    font-size: 16px;
+    margin: 20px 0;
+    color: #404258;
+}
+
+/* ------------------------ ROMANCE ANIME STYLES ------------------------ */
+.romance-anime {
+    text-align: center;
+    color: #fff;
+    margin: 15px 0;
+}
+
+#anime-romance {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.item-romance {
+    background-color: #8EACCD;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    width: 200px;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.item-romance:hover {
+    transform: translateY(-10px);
+}
+
+.item-romance img {
+    width: 100%;
+    height: 70%;
+    margin-bottom: 5px;
+}
+
+.title-romance {
+    color: #00224D;
+    font-size: 16px;
+    font-weight: 800;
+    margin: 10px 0;
+    padding: 0 10px;
+    height: 32px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.title-romance:hover {
+    text-decoration: underline;
+}
+
+.score-romance {
+    font-size: 16px;
+    color: #404258;
+    margin-top: 25px;
+}
+
+/* ------------------------ FOOTER STYLES ------------------------ */
+footer {
+    background-color: #19376D;
+    color: #fff;
+    border-top: #77A1D3 3px solid;
+    padding: 20px;
+    text-align: center;
+    font-size: large;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-section h2,
+.footer-section h3 {
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    margin: 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section #follow{
+    margin-top: 20px;
+}
+
+.socials {
+    display: flex;
+    gap: 10px;
+    margin-left: 129px;
+}
+
+.socials a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.icon-fb{
+    margin-top: 5px;
+    width: 37px;
+}
+
+.icon-wa{
+    margin-top: 7px;
+    width: 33px;
+}
+
+.icon-ig{
+    margin-left: 3px;
+    margin-top: 10px;
+    width: 28px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #8EACCD;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+/* ------------------------ RESPONSIVE  TO <= 1040px ------------------------*/
+@media screen and (max-width: 1040px){
+    .form {
+        display: flex;
+        padding: 0;
+    }
+    .form img{
+        margin-bottom: 14px;
+    }
+    input {
+        padding-top: 15px;
+     }
+     .socials{
+        margin-left: 90px;
+    }
+}
+
+/* ------------------------ RESPONSIVE  TO <= 969px ------------------------*/
+@media screen and (max-width:969px) {
+    .header-content h1 {
+        font-size: 2.1em;
+        margin-top: 50px;
+    }
+}
+
+/* ------------------------ RESPONSIVE  TO <= 940px ------------------------*/
+@media screen and (max-width:940px) {
+    .header-content h1 {
+        font-size: 2.0em;
+    }
+    .socials{
+        margin-left: 70px;
+    }
+}
+
+/* ------------------------ RESPONSIVE  TO <= 930px ------------------------*/
+@media screen and (max-width:930px) {
+    .header-content h1 {
+        font-size: 1.9em;
+        margin-top: 60px;
+    }
+}
+
+/* ------------------------ RESPONSIVE  TO <= 900px ------------------------*/
+@media screen and (max-width: 900px){
+    .nav-links {
+        gap: 0;
+    }
+    .nav-logo img{
+        margin-left: 15px;
+    }
+    .nav-links .link a{
+        padding: 0;
+    }
+    .form{
+        margin-right: 10px;
+    }
+    .socials{
+        margin-left: 20px;
+    }
+}
+
+/* ------------------------ RESPONSIVE  TO <= 890px ------------------------*/
+@media screen and (max-width:890px) {
+    .header-content h1 {
+        font-size: 1.5em;
+    }
+    .header-image img{
+        width: 180px;
+    }
+    .image-two {
+        margin-left: 140px;
+        margin-top: 70px;    
+    }
+    .socials{
+        margin-left: 50px;
+    }
+}
+
+/* ------------------------ RESPONSIVE  TO <= 800px ------------------------*/
+@media screen and (max-width: 800px) {
+    .header-content h1{
+        margin-left: 175px;
+    }
+    .header-content p{
+        font-size: 0.9em;
+        margin-left: 175px;
+    }
+    .image-two{
+        margin-top: 65px;
+    }
+    .menu-icon {
+        display: block; 
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 10px;
+        margin-right: 20px;
+        z-index: 50;
+    }
+    .navbar-links.show {
+        display: flex; 
+    }
+    .nav-logo h1 {
+        margin-top: 24px;
+        font-size: 1.5em;
+    }
+    .form {
+        margin-right: 10px;
+    }
+
+    /* ----------------- Navbar Links Styling ----------------- */
+    .navbar-links {
+        display: flex; /* layout */
+        flex-direction: column; /* items vertikal */
+        justify-content: center; /* center items vertikal */
+        align-items: center; /* center items horizon */
+        width: 100%;
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
+        display: none; /* nyembunyikan navbar links scr default */
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 10; /* selalu muncul di atas elemen lain */
+    }
+    .nav-nav{
+        background-color: #8EACCD;
+        margin: 0 50%;
+        padding: 15% ;
+        border-radius: 10px;
+    }
+    .nav-links {
+        list-style: none; /* hapus default list styling */
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column; /* items vertikal */
+        gap: 50px; /* Space diantara links */
+    }
+    .nav-links li {
+        text-align: center;
+        margin-right: 45px;
+    }
+    .nav-links a {
+        text-decoration: none; 
+        color: white; 
+        font-weight: bold;
+        display: block;
+        transition: color 0.3s, background-color 0.3s; /* Smooth transition for hover effects */
+    }
+    .nav-links a:hover {
+        color: #F6E6CB; 
+        background-color: #4c87ba; 
+        border-radius: 7px;
+    }
+    .form{
+        margin-right: 150px;
+    }
+    .menu-icon{
+        margin-bottom: -5px;
+    }
+    .socials{
+        margin-left: 50px;
+    }
+}
+
+/* ------------------------ RESPONSIVE  TO <= 700px ------------------------*/
+@media screen and (max-width: 700px) {
+    .header-content h1 {
+        font-size: 2.5em;
+        margin-left: 200px;
+    }
+    .header-content p {
+        font-size: 1em;
+        margin-left: 200px;
+    }
+    .header-image img {
+        width: 250px;
+        margin-left: 30px;
+    }
+    .image-two {
+        margin-left: 180px;
+    }
+    .socials{
+        margin-left: 200px;
+    }
+}
+
+/* ------------------------ RESPONSIVE  TO <= 600px ------------------------*/
+@media screen and (max-width: 600px) {
+    .nav-logo h1{
+        margin-top: 30px;
+    }
+    .header-content h1 {
+        font-size: 2em;
+        margin-left: 150px;
+    }
+    .header-content p {
+        font-size: 0.9em;
+        margin-left: 150px;
+    }
+    .header-image img {
+        width: 200px;
+        margin-left: 20px;
+    }
+    .image-two {
+        margin-left: 140px;
+    }
+    .form{
+        margin-right: 80px;
+    }
+    .menu-icon{
+        margin-top: 23px;
+    }
+    .socials{
+        margin-left: 200px;
+    }
+}
+
+/* ------------------------ RESPONSIVE  TO <= 500px ------------------------*/
+@media screen and (max-width: 500px) {
+    .nav-logo img{
+        width: 25%;
+        border-radius: 65%;
+        height: 30px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    .nav-logo h1{
+        font-size: 1.1em;
+        margin-top: 25px;
+    }
+    .header-content h1 {
+        font-size: 0.7em;
+        margin-left: 70px;
+        padding-left: 10px;
+    }
+    .header-content p {
+        font-size: 0.6em;
+        margin-left: 70px;
+        padding-left: 10px;
+
+    }
+    .header-image img {
+        width: 105px;
+        margin-left: 0;
+        border-radius: 15px;
+        border: solid 4px;
+    }
+    .image-two {
+        margin-left: 60px;
+        margin-top: 55px;
+    }
+    .form{
+        width: 150px;
+        height: 30px;
+        margin-right:60px;
+    }
+    .form input{
+        padding-left: 5px;
+        padding-top: 10px;
+    }
+    .menu-icon{
+        margin-top: 15px;
+        border-radius: 4px;
+    }
+    .menu-icon img{
+        width: 25px;
+    }
+    html main h1{
+        font-size: 1.5em;
+    }
+    .anime-item{
+        width: 150px;
+        height: 300px;
+    }
+    .item-romance{
+        width: 150px;
+        height: 300px;
+    }
+    .anime{
+        width: 150px;
+        height: 300px;
+    }
+    .socials{
+        margin-left: 150px;
+    }
+}
+
+/* ------------------------ RESPONSIVE  TO <= 400px ------------------------*/
+@media screen and (max-width: 400px) {
+    .nav-logo img{
+        margin-top: 7px;
+    }
+    .nav-logo h1{
+        font-size: 0.9em;
+        margin-top: 28px;
+        margin-left: 10px;
+    }
+    .header-content h1 {
+        font-size: 0.6em;
+        margin-left: 60px;
+        padding-left: 30px;
+    }
+    .header-content p {
+        font-size: 0.5em;
+        margin-left: 60px;
+        padding-left: 30px;
+    }
+    .header-image img {
+        width: 105px;
+        margin-top: -20px;
+        border-radius: 15px;
+        border: solid 3px;
+    }
+    .image-two {
+        margin-left: 70px;
+    }
+    .form{
+        width: 130px;
+        height: 30px;
+        margin-right:55px;
+    }
+    .menu-icon{
+        margin-top: 18px;
+        border-radius: 4px;
+    }
+    .menu-icon img{
+        width: 25px;
+    }
+    html main h1{
+        font-size: 1.5em;
+    }
+    .anime-item{
+        width: 140px;
+        height: 270px;
+    }
+    .item-romance{
+        width: 140px;
+        height: 270px;
+    }
+    .anime{
+        width: 140px;
+        height: 270px;
+    }
+    .socials{
+        margin-left: 100px;
+    }
+}
+
+/* ------------------------ RESPONSIVE  TO <= 350px ------------------------*/
+@media screen and (max-width: 350px) {
+    .nav-logo h1{
+        font-size: 0.9em;
+        margin-top: 30px;
+    }
+    .header-content h1 {
+        font-size: 0.5em;
+        margin-left: 50px;
+    }
+    .header-content p {
+        font-size: 0.3em;
+        margin-left: 50px;
+        margin-bottom: 0;
+    }
+    .header-image img {
+        width: 90px;
+        margin-top: -10px;
+        border-radius: 15px;
+        border: solid 3px;
+    }
+    .image-two {
+        margin-left: 65px;
+    }
+    .form{
+        width: 110px;
+        height: 30px;
+        margin-right: 50px;
+    }
+    .form img{
+        width: 10px;
+        margin-left: 10px;
+    }
+    html main h1{
+        font-size: 1.1em;
+    }
+    .anime-item{
+        width: 120px;
+        height: 220px;
+    }
+    .item-romance{
+        width: 120px;
+        height: 220px;
+    }
+    .anime{
+        width: 120px;
+        height: 220px;
+    }
+    .socials{
+        margin-left: 75px;
+    }
+}
+
+/* ------------------------ RESPONSIVE  TO <=300px ------------------------*/
+@media screen and (max-width: 300px) {
+    .nav-logo h1{
+        font-size: 0.7em;
+        margin-top: 30px;
+    }
+    .header-content h1 {
+        font-size: 0.5em;
+        margin-left: 30px;
+    }
+    .header-content p {
+        font-size: 0.3em;
+        margin-left: 30px;
+        margin-bottom: 0;
+    }
+    .header-image img {
+        width: 65px;
+        margin-top: -5px;
+        border-radius: 15px;
+        border: solid 3px;
+    }
+    .image-two {
+        margin-left: 45px;
+    } 
+    .form{
+        width: 110px;
+        height: 25px;
+        margin-right: 40px;
+    }
+    .form img{
+        width: 8px;
+        margin-left: 10px;
+    }
+    html main h1{
+        font-size: 0.9em;
+    }
+    .anime-item{
+        width: 95px;
+        height: 190px;
+    }
+    .item-romance{
+        width: 95px;
+        height: 190px;
+    }
+    .anime{
+        width: 95px;
+        height: 190px;
+    }
+    .socials{
+        margin-left: 50px;
+    }
+}
